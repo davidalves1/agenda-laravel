@@ -12,7 +12,7 @@ class CreateJobsTable extends Migration
      */
     public function up()
     {
-        Schema::create('jobs', function (Blueprint $table) {
+        Schema::create('tasks', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('company_id')->unsigned();
             $table->foreign('company_id')
@@ -20,7 +20,7 @@ class CreateJobsTable extends Migration
                 ->on('companies');
             $table->string('title', 100);
             $table->text('description');
-            $table->datetime('datetime');
+            $table->datetime('date_time');
             $table->timestamps();
         });
     }

@@ -8,10 +8,21 @@ $app.controller('homeCtrl', function ($scope) {
     //
 });
 
+var data = new Date,
+    dia = data.getDate(),
+    mes = data.getMonth() + 1,
+    ano = data.getFullYear();
+var data_atual = dia + '/' + mes + '/' + ano;
+
+var calendario = $('calendario').val();
+calendario = data_atual;
+console.log(calendario);
+
 $('#calendario').datepicker({
     format: "dd/mm/yyyy",
     todayBtn: true,
-    todayHighlight: true
+    todayHighlight: true,
+    language: 'pt-BR'
 });
 $('#calendario').on("changeDate", function() {
     $('#data_selecionada').val(

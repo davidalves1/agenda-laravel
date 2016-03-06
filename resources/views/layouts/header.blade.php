@@ -1,6 +1,6 @@
 <div ng-controller="headerCtrl">
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container-fluid container-custom">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -33,7 +33,9 @@
                             Bem vindo, <span ng-bind="nome"></span> <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Sair</a></li>
+                            <li>
+                                <a href="{{ url('/logout') }}"><i class="fa fa-sign-out"></i>Sair</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
