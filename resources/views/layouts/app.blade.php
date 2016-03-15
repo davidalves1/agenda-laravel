@@ -19,7 +19,7 @@
 	@include('layouts.header')
 
     <!-- .Conteúdo -->
-    <div class="container-fluid layout">
+    <div class="container-fluid col-md-8 col-md-offset-2">
 
         @yield('content')
 

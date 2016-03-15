@@ -16,7 +16,6 @@ var data_atual = dia + '/' + mes + '/' + ano;
 
 var calendario = $('calendario').val();
 calendario = data_atual;
-console.log(calendario);
 
 $('#calendario').datepicker({
     format: "dd/mm/yyyy",

@@ -2,13 +2,24 @@ body {
     background-color: #FCFCFC;
 }
 
-.layout {
-    width: 80%;
-    padding: 20px;
-}
-
 .container-custom {
     padding: 0 10% !important;
+}
+
+.login {
+    width: 350px;
+    height: 300px;
+    padding: 10px 30px;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -175px;
+    position: absolute;
+
+    input {
+        height: 50px;
+        direction: none;
+    }
 }
 
 table {
