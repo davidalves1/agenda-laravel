@@ -15,16 +15,16 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,
-        'password' => bcrypt(str_random(10)),
-        'remember_token' => str_random(10),
+        'password' => bcrypt('123456'),
     ];
 });
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+$factory->define(App\Company::class, function (Faker\Generator $faker) {
+    $company = $faker->company;
+
     return [
-        'name' => $faker->name,
-        'email' => $faker->safeEmail,
-        'password' => bcrypt(str_random(10)),
-        'remember_token' => str_random(10),
+        'cnpj' => $faker->cnpj,
+        'company_name' => $company . ' S/A',
+        'commercial_name' => $company,
     ];
 });

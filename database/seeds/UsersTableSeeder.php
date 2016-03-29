@@ -1,5 +1,6 @@
 <?php
 
+use App\Company;
 use Illuminate\Database\Seeder;
 
 class UsersTableSeeder extends Seeder
@@ -11,11 +12,11 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'David',
-            'company_id' => '1',
-            'email' => 'dev@integrapp.info',
-            'password' => bcrypt('123456'),
-        ]);
+
+        $companies = Company::all();
+
+        foreach ($companies as $company) {
+            factory(App\User::class, 1)->create(['company_id' => $company->id]);
+        }
     }
 }
