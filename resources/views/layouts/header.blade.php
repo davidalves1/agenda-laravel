@@ -17,6 +17,7 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Clientes</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             Visitas <span class="fa fa-angle-down"></span>
@@ -34,7 +35,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="{{ url('/logout') }}"><i class="fa fa-sign-out"></i>Sair</a>
+                                <a href="{{ url('/logout') }}"></i>Sair</a>
                             </li>
                         </ul>
                     </li>

@@ -12,27 +12,12 @@
 			<div class="text-center">
 				<table class="table table-striped">
 				    <thead>
-				        <th>Hora</th>
-				        <th>Título</th>
-				        <th>Descrição</th>
+				        <th>Cliente</th>
+				        <th>Obra</th>
+				        <th>Andamento</th>
 				    </thead>
                     <tr>
-                        <td>9:00</td>
-                        <td>Teste</td>
-                        <td>Teste da lista de tarefas</td>
-                    </tr>
-                    <tr>
-                        <td>10:00</td>
-                        <td>Teste</td>
-                        <td>Teste da lista de tarefas</td>
-                    </tr>
-                    <tr>
-                        <td>11:00</td>
-                        <td>Teste</td>
-                        <td>Teste da lista de tarefas</td>
-                    </tr>
-                    <tr>
-                        <td>14:00</td>
+                        <td>Loja Atacadão</td>
                         <td>Teste</td>
                         <td>Teste da lista de tarefas</td>
                     </tr>

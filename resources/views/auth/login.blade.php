@@ -18,15 +18,17 @@
             </div>
 
             @if ($errors->has('email') || $errors->has('password'))
-            <div class="alert alert-danger">
-                <strong>E-mail ou senha incorretos</strong>
+            <div class="text-center mb-15">
+                <span class="label label-danger">
+                    <i class="fa fa-exclamation-triangle"></i> E-mail ou senha incorretos
+                </span>
             </div>
             @endif
 
             <div class="form-group">
                 <div class="col-md-6 col-md-offset-4">
                     <button type="submit" class="btn btn-primary">
-                        <i class="fa fa-btn fa-sign-in"></i>Login
+                        <i class="fa fa-sign-in"></i> Login
                     </button>
 
                     <a class="btn btn-link" href="{{ url('/password/reset') }}">Esqueceu a senha?</a>

@@ -29,5 +29,5 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('home', 'HomeController@index');
 
-    Route::resource('tarefas', 'TaskController');
+    Route::resource('tasks', 'TaskController', ['except' => ['create', 'edit']]);
 });

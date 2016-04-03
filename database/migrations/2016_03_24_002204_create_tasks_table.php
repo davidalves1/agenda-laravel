@@ -24,7 +24,7 @@ class CreateTasksTable extends Migration
                 ->on('clients');
             $table->string('title', 100);
             $table->text('description');
-            $table->datetime('date_time');
+            $table->timestamp('date_time');
             $table->timestamps();
         });
     }

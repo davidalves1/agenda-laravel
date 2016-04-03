@@ -20,7 +20,7 @@ class CreateProfilesTable extends Migration
                 ->on('users')
                 ->onDelete('cascade');
             $table->string('name', 100);
-            $table->string('post', 50);
+            $table->string('role', 50);
             $table->timestamps();
         });
     }
