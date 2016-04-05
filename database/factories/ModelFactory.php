@@ -47,3 +47,17 @@ $factory->define(App\Task::class, function (Faker\Generator $faker) {
         'date_time' => date('Y-m-d H:i:s')
     ];
 });
+
+$factory->define(App\Address::class, function (Faker\Generator $faker) {
+    $bairro = ['Nossa Senhora', 'Igrejinha', 'Centro',
+        'Novo Horizonte', 'Alto da Aparecida', 'Sapucaia', 'Ayrton Senna'];
+    $complemento = ['Fundos', 'Ap 102', 'Ap 503', 'Térreo', 'Segundo pavimento', 'Loja 3'];
+
+    return [
+        'street' => $faker->streetName,
+        'neighborhood' => $bairro[mt_rand(0, 6)],
+        'cep' => mt_rand(11111111, 99999999),
+        'number' => $faker->buildingNumber,
+        'complement' => $complemento[mt_rand(0, 5)],
+    ];
+});
